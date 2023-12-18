@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+  <div id="product-list">
+    <div class="product-button">
+      <button id="coffee" onclick="addToCart('coffee', 480)">コーヒー　　　480円</button>
+      <div id="coffee-count">0</div>
+    </div><br>
+
+    <div class="product-button">
+      <button id="tea" onclick="addToCart('tea', 280)">紅茶　　　　　280円</button>
+      <div id="tea-count">0</div>
+    </div><br>
+
+    <div class="product-button">
+      <button id="milk" onclick="addToCart('milk', 180)">ミルク　　　　180円</button>
+      <div id="milk-count">0</div>
+    </div><br>
+
+    <div class="product-button">
+      <button id="coke" onclick="addToCart('coke', 190)">コーラ　　　　190円</button>
+      <div id="coke-count">0</div>
+    </div><br>
+
+    <div class="product-button">
+      <button id="beer" onclick="addToCart('beer', 580)">ビール　　　　580円</button>
+      <div id="beer-count">0</div>
+    </div>
+  </div>
+
+  <div id="order-summary">
+    <a>お会計</a><br>
+    <a>_________________</a>
+    <div><br>
+      <a>商品数:</a> <span id="count">0</span>個<br>
+      <a>合計金額:</a> <span id="price">0</span>円
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</div>
+
+</body>
+</html>
